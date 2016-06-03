@@ -1,6 +1,6 @@
 AS=as
 LINKER=ld
-OBJ=src/HelloWorld.o
+OBJ=src/helloworld.o
 
 %.o: %.asm
 	$(AS) -o $@ $<
