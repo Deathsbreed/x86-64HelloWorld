@@ -6,7 +6,8 @@ OBJ=src/helloworld.o
 	$(AS) -o $@ $<
 
 helloworld: $(OBJ)
-	$(LINKER) -o $@ $^
+	mkdir -p bin/
+	$(LINKER) -o bin/$@ $^
 
 .PHONY: clean
 
